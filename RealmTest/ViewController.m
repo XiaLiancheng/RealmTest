@@ -11,6 +11,7 @@
 #import <objc/runtime.h>
 #import "Target.h"
 #import "UIView+CircleAngle.h"
+#import "UIViewController+Tracking.h"
 
 @interface ViewController ()<UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btn;
@@ -19,13 +20,19 @@
 
 @implementation ViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self useRuntimeGetMessage];
+    [self useRuntimeGetMessage];//runtime获取类信息
     
-    [self setButtonCircel];
+    [self setButtonCircel];//关联封装圆角控件
+    
+    [self a];//方法交换
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"viewWillAppear");
 }
 
 //利用runtime解决调用未声明的方法  方法调用在运行时的过程
@@ -60,6 +67,9 @@
         const char *protocol = protocol_getName(protocoList[i]);
         NSLog(@"%@=========",[NSString stringWithUTF8String:protocol]);
     }
+}
+- (void)a{
+    NSLog(@"--------a-------");
 }
 
 - (void)setButtonCircel {
