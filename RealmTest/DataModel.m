@@ -10,4 +10,18 @@
 
 @implementation DataModel
 
+- (instancetype)initWithTime:(NSTimeInterval *)time
+                       title:(NSString *)title {
+    self = [super init];
+    if (self) {
+        _time = time;
+        _title = [title copy];
+    }
+    return self;
+}
+
+- (instancetype)initWithTime:(NSTimeInterval *)time {
+    return [self initWithTime:time title:nil];
+}
+
 @end

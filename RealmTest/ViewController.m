@@ -14,6 +14,7 @@
 #import "UIViewController+Tracking.h"
 
 @interface ViewController ()<UITextViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 
 @end
@@ -68,7 +69,7 @@
         NSLog(@"%@=========",[NSString stringWithUTF8String:protocol]);
     }
 }
-- (void)a{
+- (void)a {
     NSLog(@"--------a-------");
 }
 

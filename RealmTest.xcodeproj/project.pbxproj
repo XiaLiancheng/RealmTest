@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		181437101DC883760056ECB4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814370F1DC883760056ECB4 /* Person.m */; };
-		18460EA21DCB2689002E268E /* Target.m in Sources */ = {isa = PBXBuildFile; fileRef = 18460EA11DCB2689002E268E /* Target.m */; };
 		18460EA81DCB3BA0002E268E /* UIView+CircleAngle.m in Sources */ = {isa = PBXBuildFile; fileRef = 18460EA71DCB3BA0002E268E /* UIView+CircleAngle.m */; };
 		1877BEA51DC8296A00D2758A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1877BEA41DC8296A00D2758A /* main.m */; };
 		1877BEA81DC8296A00D2758A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1877BEA71DC8296A00D2758A /* AppDelegate.m */; };
@@ -19,14 +18,13 @@
 		1877BEBC1DC8324D00D2758A /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1877BEBB1DC8324D00D2758A /* DataModel.m */; };
 		1885BB3A1DC97DB300EA898D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1885BB391DC97DB300EA898D /* CoreFoundation.framework */; };
 		1885BB461DC9DB3300EA898D /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885BB451DC9DB3300EA898D /* UIViewController+Tracking.m */; };
+		18E638B41DD079B90025CF5A /* Target.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E638B31DD079B90025CF5A /* Target.m */; };
 		3BCD806C94DBEB08C48EC949 /* libPods-RealmTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3355B04F8CF76C0A3290BA8A /* libPods-RealmTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1814370E1DC883760056ECB4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		1814370F1DC883760056ECB4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		18460EA01DCB2689002E268E /* Target.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Target.h; path = ../Target.h; sourceTree = "<group>"; };
-		18460EA11DCB2689002E268E /* Target.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Target.m; path = ../Target.m; sourceTree = "<group>"; };
 		18460EA61DCB3BA0002E268E /* UIView+CircleAngle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CircleAngle.h"; sourceTree = "<group>"; };
 		18460EA71DCB3BA0002E268E /* UIView+CircleAngle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CircleAngle.m"; sourceTree = "<group>"; };
 		1877BEA01DC8296A00D2758A /* RealmTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +42,8 @@
 		1885BB391DC97DB300EA898D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		1885BB441DC9DB3300EA898D /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
 		1885BB451DC9DB3300EA898D /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		18E638B21DD079B90025CF5A /* Target.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target.h; sourceTree = "<group>"; };
+		18E638B31DD079B90025CF5A /* Target.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target.m; sourceTree = "<group>"; };
 		3355B04F8CF76C0A3290BA8A /* libPods-RealmTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34597312FF8DF67AE6531981 /* Pods-RealmTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTest/Pods-RealmTest.debug.xcconfig"; sourceTree = "<group>"; };
 		91B645C571AD266D302CE324 /* Pods-RealmTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTest/Pods-RealmTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,8 +93,8 @@
 				1877BEBB1DC8324D00D2758A /* DataModel.m */,
 				1814370E1DC883760056ECB4 /* Person.h */,
 				1814370F1DC883760056ECB4 /* Person.m */,
-				18460EA01DCB2689002E268E /* Target.h */,
-				18460EA11DCB2689002E268E /* Target.m */,
+				18E638B21DD079B90025CF5A /* Target.h */,
+				18E638B31DD079B90025CF5A /* Target.m */,
 				18460EA61DCB3BA0002E268E /* UIView+CircleAngle.h */,
 				18460EA71DCB3BA0002E268E /* UIView+CircleAngle.m */,
 				1877BEAC1DC8296A00D2758A /* Main.storyboard */,
@@ -257,7 +257,7 @@
 			files = (
 				1877BEAB1DC8296A00D2758A /* ViewController.m in Sources */,
 				1877BEBC1DC8324D00D2758A /* DataModel.m in Sources */,
-				18460EA21DCB2689002E268E /* Target.m in Sources */,
+				18E638B41DD079B90025CF5A /* Target.m in Sources */,
 				181437101DC883760056ECB4 /* Person.m in Sources */,
 				1877BEA81DC8296A00D2758A /* AppDelegate.m in Sources */,
 				1877BEA51DC8296A00D2758A /* main.m in Sources */,
